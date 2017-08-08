@@ -1,0 +1,42 @@
+<adminhtml>
+	<menu>
+		<awfaq module="awfaq">
+			<title>FAQ</title>
+			<sort_order>75</sort_order>
+			<children>
+				<awfaq_list>
+					<title>Manage Faq</title>
+					<sort_order>10</sort_order>               
+					<action>awfaq/adminhtml_faqs</action>
+				</awfaq_list>
+				<awfaq_category>
+					<title>Manage Faq Category</title>
+					<sort_order>20</sort_order>               
+					<action>awfaq/adminhtml_category</action>
+				</awfaq_category>
+			</children>
+		</awfaq>
+	</menu>
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<awfaq translate="title" module="awfaq">
+						<title>FAQ</title>
+						<sort_order>75</sort_order>
+						<children>
+							<awfaq_list>
+								<title>Manage Faq</title>
+								<sort_order>10</sort_order>               
+							</awfaq_list>
+							<awfaq_category>
+								<title>Manage Faq Category</title>
+								<sort_order>20</sort_order>
+							</awfaq_category>
+						</children>
+					</awfaq>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</adminhtml>

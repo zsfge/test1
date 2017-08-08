@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout version = "1.0.0.0" >
+    <catalog_category_view>
+        <reference name = "left" >
+            <block type = "cms/block" name = "stevetestblock1" >
+                <action method = "setBlockId" >
+                    <block_id>stevetestblock1</block_id>
+                </action>
+             </block>   
+        </reference>
+    </catalog_category_view>
+</layout>
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+<mitacfaqadmin_adminhtml_faqs_index>
+       <reference name="content">
+        <block type="mitacfaq/adminhtml_faqs" name="faqs" />
+       </reference>
+</mitacfaqadmin_adminhtml_faqs_index>
+
+<mitacfaqadmin_adminhtml_faqs_edit>
+<reference name="content">
+<block type="mitacfaq/adminhtml_faqs_edit" name="faqs.edit" />
+</reference>
+<reference name="left">
+<block type="mitacfaq/adminhtml_faqs_edit_tabs" name="faqs.edit.tabs"
+/>
+</reference>
+</mitacfaqadmin_adminhtml_faqs_edit>
+
+</layout>

@@ -1,0 +1,21 @@
+<adminhtml>
+     <menu>
+        <mitacfaqadmin module="mitacfaq">
+            <title>FAQ</title>
+            <sort_order>75</sort_order>
+            <action>mitacfaqadmin/adminhtml_faqs</action>
+         </mitacfaqadmin>
+     </menu>
+<acl>
+       <resources>
+         <admin>
+            <children>
+                <mitacfaqadmin translate="title" module="mitacfaq">
+                     <title>FAQ</title>
+                     <sort_order>75</sort_order>
+                 </mitacfaqadmin>
+             </children>
+          </admin>
+        </resources>
+</acl>
+</adminhtml>

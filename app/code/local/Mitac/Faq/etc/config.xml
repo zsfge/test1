@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+         <Mitac_Faq>
+                <version>1.0.0</version>
+         </Mitac_Faq>
+    </modules>
+	
+    <global>
+		<blocks>
+             <mitacfaq>
+               <class>Mitac_Faq_Block</class>
+              </mitacfaq>
+        </blocks>
+        <helpers>
+             <mitacfaq>
+                  <class>Mitac_Faq_Helper</class>
+             </mitacfaq>
+        </helpers>
+		
+		<models>
+			<mitacfaq>
+				<class>Mitac_Faq_Model</class>
+				<resourceModel>mitacfaq_resource</resourceModel>
+			</mitacfaq>
+
+			<mitacfaq_resource>
+				<class>Mitac_Faq_Model_Resource</class>
+				<entities>
+					<faqs>
+						<table>mitac_faqs</table>
+					</faqs>
+					<category>
+						<table>mitac_faqs_category</table>
+					</category>
+				</entities>
+			</mitacfaq_resource>
+		</models>
+
+		<resources>
+			<mitacfaq_setup>
+				<setup>
+				<module>Mitac_Faq</module>
+				</setup>
+				<connection>
+				<use>core_setup</use>
+				</connection>
+			</mitacfaq_setup>
+			<mitacfaq_write>
+				<connection>
+				<use>core_write</use>
+				</connection>
+			</mitacfaq_write>
+			<mitacfaq_read>
+				<connection>
+				<use>core_read</use>
+				</connection>
+			</mitacfaq_read>
+		</resources>
+
+		
+
+
+    </global>
+
+
+<frontend>
+    <routers>
+        <mitacfaq>
+            <use>standard</use>
+                <args>
+                    <module>Mitac_Faq</module>
+                    <frontName>mitacfaq</frontName>
+                </args>
+        </mitacfaq>
+    </routers>
+</frontend>
+
+<admin>
+     <routers>
+        <mitacfaqadmin>
+          <use>admin</use>
+             <args>
+                <module>Mitac_Faq</module>
+                <frontName>mitacfaqadmin</frontName>
+             </args>
+        </mitacfaqadmin>
+      </routers>
+</admin>
+<adminhtml>
+        <layout>
+           <updates>
+                <mitacfaq>
+                   <file>mitac/faq.xml</file>
+                </mitacfaq>
+           </updates>
+        </layout>
+</adminhtml>
+</config>

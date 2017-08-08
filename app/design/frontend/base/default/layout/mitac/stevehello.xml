@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+   <stevehello_index_index>
+        <reference name="content">
+            <block type="stevehello/hello" name="hello" template="mitac/stevehello.phtml" />
+        </reference>
+   </stevehello_index_index>
+</layout>
+
